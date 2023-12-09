@@ -1,0 +1,37 @@
+.ServicesMenuContainer {
+  gap: 10px;
+  /* margin-left: 50px; */
+}
+.ServicesMenu {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: fixed;
+}
+.NonCurrentTab {
+  color: rgba(111, 111, 111, 1);
+  font-family: "Zurich";
+  font-weight: 600;
+  font-stretch: condensed;
+  text-decoration: none;
+}
+.NonCurrentTab:hover {
+  color: rgba(0, 0, 0, 1);
+}
+.CurrentTab {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Zurich";
+  font-weight: 600;
+  font-stretch: condensed;
+  text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+  .ServicesMenuContainer {
+    background-color: #f6f6f6;
+  }
+  .ServicesMenu {
+    width: 100vw;
+    padding-top: 10px;
+    background-color: #f6f6f6;
+  }
+}

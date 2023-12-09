@@ -1,0 +1,48 @@
+.searchBar {
+  height: 35px;
+}
+input {
+  width: calc(25vw - 10px);
+  height: 30px;
+  border-radius: 15px;
+  padding: 0px 5px;
+  border: 0.5px solid black;
+}
+
+.searchBar .overlap-group {
+  height: 35px;
+  position: relative;
+}
+
+.searchBar .div-wrapper {
+  height: 35px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 450px;
+}
+
+.searchBar .text-wrapper {
+  color: #000000;
+  font-family: "IBM Flex Sans Condensed-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 58px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 5px;
+  width: 346px;
+}
+
+.searchBar .div {
+  color: #000000;
+  font-family: "GT America Mono-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 6px;
+}

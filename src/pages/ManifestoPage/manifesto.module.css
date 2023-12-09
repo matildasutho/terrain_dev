@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height to fill the viewport */
+  width: 100vw;
+}
+/* .outer > * {
+  width: 30vw;
+} */
+.outer {
+  gap: 10px;
+  display: flex;
+  flex-direction: row; /* Change to a vertical flex layout */
+  align-items: flex-start;
+  flex-shrink: 0;
+  padding-left: var(--left-pad);
+  padding-top: var(--top-pad);
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column p {
+  text-align: right;
+}
+.rotation {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: left;
+  font-family: "GT America";
+  font-size: 64px;
+}
+.fullheight {
+  min-height: 100vh;
+}
+.left-col {
+  /* width: calc(50vw - 150px); */
+  width: 45vw;
+  padding-right: 150px;
+}
+.textbox {
+  width: 20vw;
+  height: fit-content;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.imageboarder {
+  top: 0px;
+  left: 0px;
+  width: 480px;
+  height: auto;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.manifestoImage {
+  width: 480px;
+  height: auto;
+  padding-top: 20vh;
+}
+.manifesto {
+  font-family: "Zurich";
+  font-size: 32px;
+}
+.spaces-list {
+  font-family: "GT America";
+  font-weight: 400;
+  width: 30vw;
+  font-size: 28px;
+  line-height: 30px;
+  opacity: 0.1;
+  position: absolute;
+  text-align: right;
+}
+@media only screen and (max-width: 480px) {
+  .outer {
+    flex-direction: column;
+    padding-left: var(--mob-pad-left);
+    padding-top: var(--mob-pad-top);
+    width: 100vw;
+  }
+  .column {
+    width: 100vw;
+  }
+  .textbox {
+    margin: 0px;
+    width: calc(100vw - 20px);
+    padding-top: 60px;
+  }
+  .left-col {
+    width: 100vw;
+    padding-right: 10px;
+  }
+  .fullheight {
+    height: fit-content;
+  }
+
+  .rotation {
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: left;
+    font-family: "GT America";
+    font-size: 64px;
+  }
+}

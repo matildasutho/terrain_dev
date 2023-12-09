@@ -1,0 +1,75 @@
+.outer {
+  gap: 10px;
+  display: flex;
+  flex-direction: column; /* Change to a vertical flex layout */
+  align-items: flex-start;
+  flex-shrink: 0;
+  padding-left: var(--left-pad);
+  padding-top: var(--top-pad);
+}
+.outer > * {
+  width: 50vw;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height to fill the viewport */
+  width: 100vw;
+}
+
+.ServicesSection {
+  gap: 10px;
+  display: flex;
+  padding: 0 0 100px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  min-height: 100vh;
+}
+.textbox {
+  gap: 10px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  margin-left: 75%;
+}
+.imageborder {
+  top: 0px;
+  left: 0px;
+  width: 480px;
+  height: 639px;
+  display: flex;
+  position: absolute;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.textbox > h5 {
+  line-height: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+  .outer {
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding-left: var(--mob-pad-left);
+    padding-top: var(--mob-pad-top);
+  }
+
+  .ServicesSection {
+    padding-top: var(--mob-pad-top);
+  }
+  .ServicesContent > * {
+    width: 100vw;
+  }
+  .textbox {
+    margin: 0px;
+    width: calc(100vw - 20px);
+    padding-top: 60px;
+  }
+  h5 {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height to fill the viewport */
+  width: 100vw;
+}
+.outer {
+  gap: 10px;
+  display: flex;
+  flex-direction: row; /* Change to a vertical flex layout */
+  align-items: flex-start;
+  flex-shrink: 0;
+  padding-left: var(--left-pad);
+  padding-top: var(--top-pad);
+}
+
+.fullheight {
+  height: 100vh;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 970px) {
+  .outer {
+    flex-direction: column;
+    padding-left: var(--mob-pad-left);
+    padding-top: var(--mob-pad-top);
+    width: 100vw;
+  }
+  .column {
+    width: 100vw;
+  }
+  .textbox {
+    margin: 0px;
+    width: calc(100vw - 20px);
+    padding-top: 60px;
+  }
+  .left-col {
+    width: 100vw;
+    padding-right: 10px;
+  }
+  .fullheight {
+    height: fit-content;
+  }
+}

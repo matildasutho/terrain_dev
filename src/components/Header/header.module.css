@@ -1,0 +1,152 @@
+:root {
+  --menu-font: 10px;
+}
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; /* Adjust as needed */
+  text-align: center; /* Adjust as needed */
+  /*background: #333;*/
+  color: #fff;
+  /* padding: 20px; */
+  position: fixed;
+  height: fit-content;
+  padding: 5px;
+  width: 100vw;
+  background-color: #f6f6f6;
+  z-index: 10;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+/* .terrainlogoscaleable {
+  display: flex;
+  gap: 10px;
+} */
+.headerHidden {
+  display: none;
+}
+.terrainlogo {
+  width: 500px;
+  height: auto;
+}
+
+.navigation {
+  width: 100%;
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3px;
+
+  /* justify-content: center; */
+}
+
+.menucolumn {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 1px;
+}
+
+.mainmenu {
+  display: flex;
+  width: 200px;
+  gap: 5px;
+  padding: 0 6px;
+  align-items: left;
+}
+
+.currentpagemainmenu {
+  font-size: var(--menu-font);
+  line-height: var(--menu-font);
+  font-weight: 200;
+  color: rgba(0, 0, 0, 1);
+  font-stretch: normal;
+  text-decoration: none;
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  padding: 1px 2px;
+  margin: 0px 10px;
+}
+.currentpagemainmenu:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.linktext {
+  font-size: var(--menu-font);
+  line-height: var(--menu-font);
+  font-weight: 200;
+  color: rgba(0, 0, 0, 1);
+  font-stretch: normal;
+  text-decoration: none;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  padding: 1px 2px;
+  margin: 0px 10px;
+}
+.linktext:hover {
+  border: 0.5px solid rgba(0, 0, 0, 1);
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  font-size: 32px;
+  font-family: "GT America";
+  font-weight: 100;
+  line-height: 15px;
+  padding: 10px 5px;
+  color: black;
+}
+
+.mobile-nav {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  position: fixed;
+  margin-top: 70px;
+  padding-top: 20px;
+  z-index: 10;
+  top: 0vh;
+  left: 0vw;
+}
+.hidden {
+  display: none;
+}
+@media only screen and (max-width: 970px) {
+  :root {
+    --menu-font: 16px;
+  }
+  .header {
+    align-items: flex-end;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0vh;
+    right: 0vw;
+  }
+  .navigation {
+    display: none;
+  }
+  .terrainlogo {
+    width: 280px;
+    height: auto;
+  }
+  .mainmenu {
+    padding: 0px;
+    margin-bottom: 3px;
+  }
+  .linktext {
+    font-weight: 100;
+  }
+  .currentpagemainmenu {
+    font-weight: 100;
+  }
+}

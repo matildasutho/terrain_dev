@@ -1,0 +1,79 @@
+.expand-btn {
+  width: 30px;
+  background-color: blue;
+  height: 200px;
+  position: fixed;
+  z-index: 12;
+  bottom: 0vh;
+  right: 0vw;
+}
+
+/* .expand-btn {
+  background-color: #0f45c9;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.expand-btn::before {
+  content: "";
+  width: 30px;
+  background-color: blue;
+  height: 200px;
+  position: fixed;
+  z-index: 12;
+  bottom: 0vh;
+  right: 0vw;
+  background-image: linear-gradient(
+    #f6f6f6,
+    #6f6f6f,
+    #f6f6f6,
+    #b0b0b0,
+    #f6f6f6,
+    #6f6f6f,
+    #b0b0b0
+  );
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+.expand-btn:hover::before {
+  opacity: 0;
+}
+
+.expand-btn::after {
+  content: "";
+  width: 30px;
+  background-color: blue;
+  height: 200px;
+  position: fixed;
+  z-index: 12;
+  bottom: 0vh;
+  right: 0vw;
+  background-image: linear-gradient(
+    #82f74f,
+    #f6f6f6,
+    #0f45c9,
+    #f6f6f6,
+    #82f74f,
+    #f6f6f6,
+    #0f45c9
+  );
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.expand-btn:hover::after {
+  opacity: 1;
+} */
+.klaviyo-form {
+  width: 100%;
+  background-color: #82f74f;
+  height: fit-content;
+  position: fixed;
+  z-index: 10;
+  bottom: 0vh;
+  right: 0vw;
+}
+.hidden {
+  display: none;
+}

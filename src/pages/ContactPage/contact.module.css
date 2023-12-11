@@ -15,13 +15,16 @@
 }
 
 .fullheight {
-  min-height: calc(100vh - 220px);
+  min-height: calc(100vh - 120px);
 }
 .column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-
+.contactPage {
+  display: flex;
+  flex-direction: row;
+}
 @media only screen and (max-width: 970px) {
   .outer {
     flex-direction: column;
@@ -33,15 +36,10 @@
     width: 100vw;
   }
   .textbox {
-    margin: 0px;
-    width: calc(100vw - 20px);
-    padding-top: 60px;
+    width: 300px;
   }
   .left-col {
     width: 100vw;
     padding-right: 10px;
-  }
-  .fullheight {
-    height: fit-content;
   }
 }

@@ -5,6 +5,8 @@ import { getPastProjects } from "../../api/contenful/utils";
 
 import styles from "./archivepage.module.css";
 
+import PageTitle from "../../components/PageTitle/PageTitle";
+
 const ArchivePage = () => {
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [archiveItems, setArchiveItems] = useState([]);
@@ -73,9 +75,7 @@ const ArchivePage = () => {
   return (
     <div className={styles["container"]}>
       <div className={styles["column"]}>
-        <span className={styles["rotation"]}>
-          <h1>ARCHIVE</h1>
-        </span>
+        <PageTitle title={"ARCHIVE"} />
       </div>
       <div className={styles["column"]}>
         <div className={styles["archivePage"]}>

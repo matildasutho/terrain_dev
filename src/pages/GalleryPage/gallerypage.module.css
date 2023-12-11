@@ -22,8 +22,8 @@
   flex-direction: column;
 }
 .left-col {
-  width: calc(50vw - 300px);
-  padding-right: 150px;
+  display: flex;
+  flex-direction: row;
 }
 .textbox {
   width: 480px;

@@ -59,6 +59,7 @@ const AboutPage = () => {
         fundingRef={fundingRef}
         scrollToSection={scrollToSection}
       />
+
       <div className={styles["AboutSection"]}>
         <div
           id="landAcknowledgement"

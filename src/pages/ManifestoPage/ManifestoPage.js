@@ -1,12 +1,13 @@
 import React from "react";
 
-import GuadismImage from "../../assets/gaudism-1.png";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 import styles from "./manifesto.module.css";
 
 const ManifestoPage = (props) => {
   return (
     <div className={styles["outer"]}>
+      <PageTitle title={"MANIFESTO"} />
       {/* <div className={styles["column"]}>
         <span className={styles["rotation"]}>MANIFESTO</span>
       </div> */}

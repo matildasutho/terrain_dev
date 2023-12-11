@@ -1,14 +1,14 @@
 .AboutMenuContainer {
   gap: 10px;
-  /* padding-top: var(--top-pad); */
-
-  /* margin-left: 50px; */
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 8;
 }
 .AboutMenu {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  position: fixed;
   padding-bottom: 30px;
 }
 .NonCurrentTab {
@@ -31,11 +31,11 @@
 @media only screen and (max-width: 970px) {
   .AboutMenuContainer {
     /* display: none; */
+    width: 100vw;
+    background-image: linear-gradient(#f6f6f6, 90%, rgba(255, 255, 255, 0));
     padding-top: var(--mob-top-pad);
   }
   .AboutMenu {
-    width: 100vw;
-    background-image: linear-gradient(#f6f6f6, 90%, rgba(255, 255, 255, 0));
     /* display: none; */
   }
 }

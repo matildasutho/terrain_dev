@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./AboutMenu.module.css";
 
+import PageTitle from "../PageTitle/PageTitle";
+
 const AboutMenu = ({
   tabName,
   landRef,
@@ -47,6 +49,7 @@ const AboutMenu = ({
 
   return (
     <div className={styles["AboutMenuContainer"]}>
+      <PageTitle title={"ABOUT"} />
       <div className={styles["AboutMenu"]}>
         <div
           className={styles["AboutMenuSubHeading"]}

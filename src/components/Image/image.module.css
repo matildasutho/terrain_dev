@@ -1,0 +1,20 @@
+.imageCont {
+  width: 480px;
+  height: auto;
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.imageStyle {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media only screen and (max-width: 970px) {
+  .imageCont {
+    width: 350px;
+    margin-left: calc(50vw - 175px);
+    height: auto;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.5);
+  }
+}

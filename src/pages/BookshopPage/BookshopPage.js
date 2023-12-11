@@ -2,6 +2,9 @@ import React from "react";
 
 import BookshopImage from "../../assets/ngv-abf-2020-1.png";
 
+import Image from "../../components/Image/Image";
+import PageTitle from "../../components/PageTitle/PageTitle";
+
 import styles from "./bookshop.module.css";
 
 const bookshopPage = () => {
@@ -10,17 +13,7 @@ const bookshopPage = () => {
       <div className={styles[("container", "column")]}>
         <div className={styles["left-col"]}>
           <div className={styles["fullheight"]}>
-            <h1>BOOKSHOP</h1>
-            {/* 
-            <p>
-              M Closed <br />
-              T Closed <br />
-              W 12 - 19:00 <br />
-              T 12 - 19:00 <br />
-              F 12 - 19:00 <br />
-              S 11 - 17:00 <br />
-              S 11 - 17:00 <br />
-            </p> */}
+            <PageTitle title={"BOOKSHOP"} />
           </div>
           <div className={styles["fullheight"]}>
             <h3 className={styles["bookshop-quote"]}>
@@ -34,9 +27,7 @@ const bookshopPage = () => {
       </div>
 
       <div className={styles[("container", "column")]}>
-        <div className={styles["imageCont"]}>
-          <img src={BookshopImage} className={styles["imageStyle"]} />
-        </div>
+        <Image setImage={BookshopImage} />
         <div className={styles["textbox"]}>
           <p>
             TERRAIN is Melbourne’s destination for ecological and

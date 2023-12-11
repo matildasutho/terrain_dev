@@ -33,10 +33,10 @@
 .App-link {
   color: #61dafb;
 }
-/* .container {
-  height: calc(100vh - 143px);
-  overflow-y: scroll;
-} */
+.container {
+  width: 100vw;
+  overflow-x: hidden;
+}
 .container::-webkit-scrollbar {
   display: none;
 }

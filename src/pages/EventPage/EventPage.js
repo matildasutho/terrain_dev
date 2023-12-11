@@ -5,6 +5,8 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import { getProjectBySlug } from "../../api/contenful/utils";
 
+import Image from "../../components/Image/Image";
+
 import styles from "./eventpage.module.css";
 
 const EventPage = () => {
@@ -88,30 +90,23 @@ const EventPage = () => {
   return (
     <div className={styles["outer"]}>
       <div className={styles[("container", "column")]}>
-        <div className={styles["fullheight"]}>
+        <div>
           <h1>{project.title}:</h1>
-          <br />
+
           <h3>{project.subtitle}</h3>
-          <br />
+
           <h3>{project.location}</h3>
-          <br />
+
           <h5>{date.toLocaleDateString("en-AU")}</h5>
         </div>
       </div>
 
       <div className={styles[("container", "column")]}>
+        <Image
+          setImage={project?.thumbnail?.url}
+          imageTitle={project?.thumbnail?.title}
+        />
         <div className={styles["textbox"]}>
-          <div className={styles["im-gcaption"]}>
-            <div className={styles["imageborder"]}>
-              <img
-                src={project?.thumbnail?.url}
-                alt={project?.thumbnail?.title}
-                className={styles["image"]}
-              />
-            </div>
-
-            <span>{project?.thumbnail?.title}</span>
-          </div>
           <span>
             {documentToReactComponents(project?.description?.json, renderNode)}
           </span>

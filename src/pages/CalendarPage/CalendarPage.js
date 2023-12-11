@@ -5,6 +5,8 @@ import { getProjects } from "../../api/contenful/utils";
 
 import styles from "./calendar.module.css";
 
+import PageTitle from "../../components/PageTitle/PageTitle";
+
 const CalendarPage = () => {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -125,15 +127,28 @@ const CalendarPage = () => {
 
   return (
     <div className={styles["container"]}>
-      {/* <div className={styles["column"]}>
-        <span className={styles["rotation"]}>
-          <h1>CALENDAR</h1>
-        </span>
-      </div> */}
+      <PageTitle title={"CALENDAR"} />
       <div className={styles["column"]}>
         <div className={styles["calendarPage"]}>
           {mobileView ? (
             <div className={styles["calendarMobile"]}>
+              {projects.map((project, index) => (
+                <div>
+                  <Link
+                    to={`/event/${project.slug}`}
+                    className={styles["linktext"]}
+                  >
+                    <div key={index} className={styles["eventItem"]}>
+                      {project.title}
+
+                      <span className={styles["formattedHours"]}>
+                        {new Date(project.date).getHours()}H
+                      </span>
+                      <span></span>
+                    </div>
+                  </Link>
+                </div>
+              ))}
               <div className={styles["mob-month"]}>
                 <span>
                   <span
@@ -157,23 +172,6 @@ const CalendarPage = () => {
                   </span>
                 </span>
               </div>
-              {projects.map((project, index) => (
-                <div>
-                  <Link
-                    to={`/event/${project.slug}`}
-                    className={styles["linktext"]}
-                  >
-                    <div key={index} className={styles["eventItem"]}>
-                      {project.title}
-
-                      <span className={styles["formattedHours"]}>
-                        {new Date(project.date).getHours()}H
-                      </span>
-                      <span></span>
-                    </div>
-                  </Link>
-                </div>
-              ))}
             </div>
           ) : (
             <div className={styles["calendar"]}>

@@ -7,17 +7,15 @@
 .outer > * {
   width: 50vw;
 }
-.fullheight {
-  height: 900vh;
-}
+
 .outer {
   gap: 10px;
   display: flex;
   flex-direction: row; /* Change to a vertical flex layout */
   align-items: flex-start;
   flex-shrink: 0;
-  padding-left: 150px;
-  padding-top: 160px;
+  padding-top: var(--top-pad);
+  padding-left: 10px;
 }
 .column {
   width: 50vw;
@@ -55,4 +53,17 @@
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   align-items: flex-start;
   flex-shrink: 0;
+}
+@media only screen and (max-width: 768px) {
+  .outer {
+    flex-direction: column;
+    padding-top: var(--mob-pad-top);
+  }
+
+  .textbox {
+    width: calc(100vw - 20px);
+  }
+  .outer > * {
+    width: 100vw;
+  }
 }

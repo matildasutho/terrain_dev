@@ -8,11 +8,14 @@
 .homepage {
   gap: 10px;
   width: 100vw;
-  height: 90%;
+  min-height: calc(100vh - 90px);
   display: flex;
   flex-direction: column; /* Change to a vertical flex layout */
   align-items: flex-start;
   flex-shrink: 0;
+}
+.fullheight {
+  min-height: 100vh;
 }
 .terrainlogo {
   width: 500px;
@@ -52,9 +55,18 @@
   border-radius: 45px;
 }
 .textcontentlink:hover {
-  background-color: #82f74f;
   /* background-image: linear-gradient(90deg, #82f74f, #f6f6f6); */
+  background-color: #82f74f;
   border-color: rgba(0, 0, 0, 0);
+}
+.hoveredButton {
+  background-color: #82f74f;
+}
+.hover-img {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  z-index: 10;
 }
 /* .linktext {
   color: rgba(0, 0, 0, 1);
@@ -76,9 +88,10 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 970px) {
   .homepage {
-    width: 80vw;
+    width: 100vw;
+    min-height: calc(100vh - 90px);
   }
   .terrainlogo {
     width: 280px;
@@ -86,6 +99,7 @@
   }
   .para-text {
     font-size: 18px;
+    line-height: 22px;
   }
   .home-a {
     font-size: 18px;

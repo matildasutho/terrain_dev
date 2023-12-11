@@ -4,9 +4,9 @@
   flex-direction: column;
   gap: 10px;
   position: relative;
-  width: 25vw;
+  width: calc(25vw - 10px);
   height: fit-content;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "GT America";
   font-weight: 200;
   color: black;
@@ -14,12 +14,12 @@
 
 .list-cat {
   align-self: stretch;
-  padding: 5px 10px;
+  padding: 3px 7px;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   position: relative;
   background-color: #f6f6f6;
-  border-radius: 15px;
+  border-radius: 13px;
   border: 0.5px solid rgba(0, 0, 0, 1);
 }
 .list-cat:hover {
@@ -36,11 +36,11 @@
 }
 .counter {
   color: #000000;
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 0;
   line-height: normal;
   border: 0.5px solid black;
-  width: 40px;
+  width: 30px;
   padding: 0px 10px;
   text-align: center;
   border-radius: 10px;
@@ -57,3 +57,13 @@
   top: 5px;
   width: 37px;
 } */
+@media only screen and (max-width: 970px) {
+  .resourceMenuItem {
+    width: 100%;
+    padding: 2px 3px;
+  }
+  .list-cat {
+    margin-right: 0px;
+    margin-bottom: 1px;
+  }
+}

@@ -15,7 +15,7 @@
 }
 
 .fullheight {
-  height: 100vh;
+  min-height: calc(100vh - 220px);
 }
 .column {
   display: flex;

@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: row;
   min-height: 100vh; /* Minimum height to fill the viewport */
-  width: 100vw;
-  padding-top: 160px;
-  padding-left: 10px;
+  width: calc(100vw - 100px);
+  padding-top: var(--top-pad);
+  padding-left: var(--left-pad);
 }
 .column {
   display: flex;
@@ -22,15 +22,14 @@
   align-items: flex-start;
   flex-shrink: 0;
   font-size: 16px;
-  margin-left: 15vw;
 }
 .archiveInner {
   display: flex;
   flex-wrap: wrap;
-  width: 70vw;
+  /* width: 70vw; */
 }
 .filterTag {
-  width: 150px;
+  width: 123px;
   display: flex;
   align-items: flex-start;
   cursor: pointer;
@@ -58,13 +57,46 @@
   background-color: #0f45c9;
 }
 .archiveTitle {
-  width: 20%;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
+  justify-content: space-between;
 }
-
+.archiveTitleYear {
+  width: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.archiveTitleCont {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.archiveTitleLoc {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.archiveTitleCat {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
 .archiveTitleText {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -85,6 +117,17 @@
   line-height: 14px;
   font-stretch: normal;
   text-decoration: none;
+  width: 100%;
+}
+.archiveRowTextYear {
+  font-family: "GT America";
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 14px;
+  font-stretch: normal;
+  text-decoration: none;
+  width: 100%;
+  text-align: right;
 }
 .linktext {
   color: rgba(0, 0, 0, 1);
@@ -93,4 +136,22 @@
 .linktext:hover {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 970px) {
+  .container {
+    padding-top: var(--mob-pad-top);
+    padding-left: var(--mob-pad-left);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .archiveTitle {
+    width: 40vw;
+  }
+  .archiveTitleYear {
+    width: 10vw;
+  }
+  .archiveTitleCont {
+    width: 30vw;
+  }
 }

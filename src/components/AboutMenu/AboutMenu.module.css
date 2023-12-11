@@ -1,5 +1,7 @@
 .AboutMenuContainer {
   gap: 10px;
+  /* padding-top: var(--top-pad); */
+
   /* margin-left: 50px; */
 }
 .AboutMenu {
@@ -7,6 +9,7 @@
   align-items: flex-start;
   flex-direction: column;
   position: fixed;
+  padding-bottom: 30px;
 }
 .NonCurrentTab {
   color: rgba(111, 111, 111, 1);
@@ -25,13 +28,14 @@
   font-stretch: condensed;
   text-decoration: none;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 970px) {
   .AboutMenuContainer {
-    background-color: #f6f6f6;
+    /* display: none; */
+    padding-top: var(--mob-top-pad);
   }
   .AboutMenu {
     width: 100vw;
-    padding-top: 10px;
-    background-color: #f6f6f6;
+    background-image: linear-gradient(#f6f6f6, 90%, rgba(255, 255, 255, 0));
+    /* display: none; */
   }
 }

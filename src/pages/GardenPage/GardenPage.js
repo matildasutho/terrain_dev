@@ -14,6 +14,8 @@ const GardenPage = () => {
   const [counts, setCounts] = useState({});
   const [activeIndex, setActiveIndex] = useState(null);
 
+  const [mobileView, setMobileView] = useState(false);
+
   const handleFilter = (tag, index) => {
     if (tag === "All") {
       setFilteredItems(gardenItems);
@@ -75,6 +77,24 @@ const GardenPage = () => {
       });
   }, [searchString]);
 
+  useEffect(() => {
+    // Check the viewport width to determine mobile view
+    const handleResize = () => {
+      if (window.innerWidth < 970) {
+        setMobileView(true);
+      } else {
+        setMobileView(false);
+      }
+    };
+
+    handleResize(); // Check on initial render
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <div className={styles["container"]}>
       {/* <div className={styles["column"]}>
@@ -89,60 +109,132 @@ const GardenPage = () => {
               searchString={searchString}
               setSearchString={setSearchString}
             />
-            <IndexItem
-              text="all"
-              onClick={(tag) => handleFilter(tag, 0)}
-              counts={counts}
-              isActive={activeIndex === 0}
-            />
-            <IndexItem
-              text="Academic"
-              onClick={(tag) => handleFilter(tag, 1)}
-              counts={counts}
-              isActive={activeIndex === 1}
-            />
+            {mobileView ? (
+              <div>
+                <div
+                  className={styles["drop-down"]}
+                  onClick={() => setShowDropdown(!showDropdown)}
+                >
+                  <span>Select Filters</span>
+                  <span className={styles["float-right"]}>+</span>
 
-            <IndexItem
-              text="publications"
-              onClick={(tag) => handleFilter(tag, 2)}
-              counts={counts}
-              isActive={activeIndex === 2}
-            />
-            <IndexItem
-              text="Organisations"
-              onClick={(tag) => handleFilter(tag, 3)}
-              counts={counts}
-              isActive={activeIndex === 3}
-            />
-            <IndexItem
-              text="Podcasts"
-              onClick={(tag) => handleFilter(tag, 4)}
-              counts={counts}
-              isActive={activeIndex === 4}
-            />
-            <IndexItem
-              text="films"
-              onClick={(tag) => handleFilter(tag, 5)}
-              counts={counts}
-              isActive={activeIndex === 5}
-            />
-            <IndexItem
-              text="Artists"
-              onClick={(tag) => handleFilter(tag, 6)}
-              counts={counts}
-              isActive={activeIndex === 6}
-            />
-            <IndexItem
-              text="News Articles"
-              onClick={(tag) => handleFilter(tag, 7)}
-              counts={counts}
-              isActive={activeIndex === 7}
-            />
+                  {showDropdown && (
+                    <div className={styles["dropdownContent"]}>
+                      {/* Render dropdown items */}
+                      <IndexItem
+                        text="all"
+                        onClick={(tag) => handleFilter(tag, 0)}
+                        counts={counts}
+                        isActive={activeIndex === 0}
+                      />
+                      <IndexItem
+                        text="Academic"
+                        onClick={(tag) => handleFilter(tag, 1)}
+                        counts={counts}
+                        isActive={activeIndex === 1}
+                      />
+
+                      <IndexItem
+                        text="publications"
+                        onClick={(tag) => handleFilter(tag, 2)}
+                        counts={counts}
+                        isActive={activeIndex === 2}
+                      />
+                      <IndexItem
+                        text="Organisations"
+                        onClick={(tag) => handleFilter(tag, 3)}
+                        counts={counts}
+                        isActive={activeIndex === 3}
+                      />
+                      <IndexItem
+                        text="Podcasts"
+                        onClick={(tag) => handleFilter(tag, 4)}
+                        counts={counts}
+                        isActive={activeIndex === 4}
+                      />
+                      <IndexItem
+                        text="films"
+                        onClick={(tag) => handleFilter(tag, 5)}
+                        counts={counts}
+                        isActive={activeIndex === 5}
+                      />
+                      <IndexItem
+                        text="Artists"
+                        onClick={(tag) => handleFilter(tag, 6)}
+                        counts={counts}
+                        isActive={activeIndex === 6}
+                      />
+                      <IndexItem
+                        text="News Articles"
+                        onClick={(tag) => handleFilter(tag, 7)}
+                        counts={counts}
+                        isActive={activeIndex === 7}
+                      />
+                    </div>
+                  )}
+                </div>
+              </div>
+            ) : (
+              <>
+                <IndexItem
+                  text="all"
+                  onClick={(tag) => handleFilter(tag, 0)}
+                  counts={counts}
+                  isActive={activeIndex === 0}
+                />
+                <IndexItem
+                  text="Academic"
+                  onClick={(tag) => handleFilter(tag, 1)}
+                  counts={counts}
+                  isActive={activeIndex === 1}
+                />
+
+                <IndexItem
+                  text="publications"
+                  onClick={(tag) => handleFilter(tag, 2)}
+                  counts={counts}
+                  isActive={activeIndex === 2}
+                />
+                <IndexItem
+                  text="Organisations"
+                  onClick={(tag) => handleFilter(tag, 3)}
+                  counts={counts}
+                  isActive={activeIndex === 3}
+                />
+                <IndexItem
+                  text="Podcasts"
+                  onClick={(tag) => handleFilter(tag, 4)}
+                  counts={counts}
+                  isActive={activeIndex === 4}
+                />
+                <IndexItem
+                  text="films"
+                  onClick={(tag) => handleFilter(tag, 5)}
+                  counts={counts}
+                  isActive={activeIndex === 5}
+                />
+                <IndexItem
+                  text="Artists"
+                  onClick={(tag) => handleFilter(tag, 6)}
+                  counts={counts}
+                  isActive={activeIndex === 6}
+                />
+                <IndexItem
+                  text="News Articles"
+                  onClick={(tag) => handleFilter(tag, 7)}
+                  counts={counts}
+                  isActive={activeIndex === 7}
+                />
+              </>
+            )}
           </div>
-          <div className={styles["gardenContent"]}>
-            {filteredItems.map((item, index) => (
-              <Resource key={index} item={item} />
-            ))}
+
+          <div className={styles["gardenOuter"]}>
+            <div className={styles["gardenContent"]}>
+              {filteredItems.map((item, index) => (
+                <Resource key={index} item={item} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

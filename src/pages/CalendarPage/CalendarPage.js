@@ -38,6 +38,7 @@ const CalendarPage = () => {
   };
 
   const [mobileView, setMobileView] = useState(false);
+  const monthsToShow = 6;
 
   useEffect(() => {
     // Check the viewport width to determine mobile view
@@ -55,6 +56,18 @@ const CalendarPage = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const getNextMonths = (startMonth, times) => {
+    const nextMonths = [];
+    let currentMonth = startMonth;
+    for (let i = 0; i < times; i++) {
+      nextMonths.push(currentMonth);
+      currentMonth = (currentMonth + 1) % 12; // Increment month (loop around if December)
+    }
+    return nextMonths;
+  };
+
+  const nextMonthsIndexes = getNextMonths(monthIndex, monthsToShow);
+
   useEffect(() => {
     getProjects().then((response) => {
       const filteredProjects = response.projectsCollection.items.filter(
@@ -62,12 +75,14 @@ const CalendarPage = () => {
           const projectDate = new Date(project.date);
           const projectYear = projectDate.getFullYear();
           const projectMonth = projectDate.getMonth();
-          return projectYear === year && projectMonth === monthIndex;
+          return (
+            nextMonthsIndexes.includes(projectMonth) && projectYear === year
+          );
         }
       );
       setProjects(filteredProjects);
     });
-  }, [year, monthIndex]);
+  }, [year, nextMonthsIndexes]);
 
   //console.log(calendar);
   const daysOfWeek = [
@@ -120,7 +135,27 @@ const CalendarPage = () => {
           {mobileView ? (
             <div className={styles["calendarMobile"]}>
               <div className={styles["mob-month"]}>
-                <span>{getMonthName(monthIndex)}</span>
+                <span>
+                  <span
+                    className={styles["btn-access"]}
+                    onClick={decreaseMonth}
+                  >
+                    &lt;
+                  </span>
+                </span>
+
+                <span>
+                  <span>{getMonthName(monthIndex)}</span>
+                </span>
+
+                <span>
+                  <span
+                    className={styles["btn-access"]}
+                    onClick={increaseMonth}
+                  >
+                    &gt;
+                  </span>
+                </span>
               </div>
               {projects.map((project, index) => (
                 <div>

@@ -16,22 +16,18 @@ const galleryPage = (props) => {
       </div>
 
       <div className={styles[("container", "column")]}>
+        <div className={styles["imageCont"]}>
+          <img src={GalleryImage} className={styles["imageStyle"]} />
+        </div>
         <div className={styles["textbox"]}>
           <div className={styles["text-img"]}>
             <span className={styles["rotation"]}>
-              <h3>
+              <span>
                 NOW SHOWING: THE ANOMALOUS
                 <br />
                 IMAGE, BY TRENT CRAWFORD.
-              </h3>
+              </span>
             </span>
-            {/* <div className={styles["imageborder"]}>
-            <img
-              src={GalleryImage}
-              alt="ngvabf20201I350"
-              className={styles["ngvabf20201"]}
-            />
-          </div> */}
           </div>
           <p>
             I know this image is not the server but imagine we have a nice,

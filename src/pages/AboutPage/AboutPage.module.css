@@ -74,6 +74,7 @@
   }
 
   .AboutSection {
+    min-height: fit-content;
     padding-top: var(--mob-pad-top);
   }
   .aboutPage > * {
@@ -83,9 +84,6 @@
     margin: 0px;
     width: calc(100vw - 20px);
     padding-top: 60px;
-  }
-  h5 {
-    display: none;
   }
 }
 /* @media only screen and (max-width: 480px) {

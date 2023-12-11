@@ -13,12 +13,14 @@
   flex-direction: row; /* Change to a vertical flex layout */
   align-items: flex-start;
   flex-shrink: 0;
-  padding-left: var(--left-pad);
+  /* padding-left: var(--left-pad); */
   padding-top: var(--top-pad);
 }
 .column {
   display: flex;
   flex-direction: column;
+  width: 50vw;
+  margin: 0px 10px;
 }
 .column p {
   text-align: right;
@@ -39,7 +41,7 @@
   padding-right: 150px;
 }
 .textbox {
-  width: 20vw;
+  width: 100%;
   height: fit-content;
   align-items: flex-start;
   flex-shrink: 0;
@@ -70,25 +72,23 @@
   position: absolute;
   text-align: right;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 970px) {
   .outer {
-    flex-direction: column;
     padding-left: var(--mob-pad-left);
     padding-top: var(--mob-pad-top);
     width: 100vw;
   }
-  .column {
+  /* .column {
     width: 100vw;
-  }
-  .textbox {
+  } */
+  /* .textbox {
     margin: 0px;
     width: calc(100vw - 20px);
-    padding-top: 60px;
-  }
-  .left-col {
+  } */
+  /* .left-col {
     width: 100vw;
     padding-right: 10px;
-  }
+  } */
   .fullheight {
     height: fit-content;
   }
@@ -99,5 +99,8 @@
     text-align: left;
     font-family: "GT America";
     font-size: 64px;
+  }
+  .manifesto {
+    font-size: 22px;
   }
 }

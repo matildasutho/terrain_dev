@@ -11,7 +11,7 @@ const bookshopPage = () => {
         <div className={styles["left-col"]}>
           <div className={styles["fullheight"]}>
             <h1>BOOKSHOP</h1>
-
+            {/* 
             <p>
               M Closed <br />
               T Closed <br />
@@ -20,7 +20,7 @@ const bookshopPage = () => {
               F 12 - 19:00 <br />
               S 11 - 17:00 <br />
               S 11 - 17:00 <br />
-            </p>
+            </p> */}
           </div>
           <div className={styles["fullheight"]}>
             <h3 className={styles["bookshop-quote"]}>
@@ -34,14 +34,10 @@ const bookshopPage = () => {
       </div>
 
       <div className={styles[("container", "column")]}>
+        <div className={styles["imageCont"]}>
+          <img src={BookshopImage} className={styles["imageStyle"]} />
+        </div>
         <div className={styles["textbox"]}>
-          {/* <div className={styles[("imageborder", "fullheight")]}>
-            <img
-              src={BookshopImage}
-              alt="ngvabf20201I350"
-              className={styles["ngvabf20201"]}
-            />
-          </div> */}
           <p>
             TERRAIN is Melbourne’s destination for ecological and
             more-than-human literature. Our carefully curated collection

@@ -1,8 +1,8 @@
 :root {
-  --mob-pad-top: 70px;
+  --mob-pad-top: 65px;
   --mob-pad-left: 10px;
-  --left-pad: 5vw;
-  --top-pad: 120px;
+  --left-pad: 5px;
+  --top-pad: 128px;
 }
 
 @font-face {
@@ -28,9 +28,12 @@
   src: url("./fonts/Zurich-Bold-Condensed-BT.ttf") format("truetype");
 }
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding: 0;
   margin: 0;
+}
+*::-webkit-scrollbar {
+  display: none;
 }
 body {
   background-color: #f6f6f6;
@@ -39,14 +42,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
-  height: 100vh;
+  width: 100vw !important;
+  min-height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none;
 }
+
 /* .container > * {
   width: 50vw;
   padding-top: 10px;
@@ -107,10 +111,10 @@ a:hover {
   height: 100vh;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 970px) {
   h1 {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 45px;
+    line-height: 45px;
   }
   h2 {
     font-size: 12px;

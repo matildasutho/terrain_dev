@@ -27,6 +27,21 @@ const ArchivePage = () => {
     "PODCASTS",
   ];
 
+  const [showCategory, setShowCategory] = useState(true);
+  const [showLocation, setShowLocation] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("resize", handleMobileView);
+    handleMobileView(); // Check on initial render
+    return () => window.removeEventListener("resize", handleMobileView);
+  }, []);
+
+  const handleMobileView = () => {
+    const isMobileView = window.innerWidth < 768;
+    setShowCategory(!isMobileView);
+    setShowLocation(!isMobileView);
+  };
+
   const handleFilterClick = (filter) => {
     const isActive = filterActive.includes(filter);
     if (isActive) {
@@ -57,14 +72,14 @@ const ArchivePage = () => {
 
   return (
     <div className={styles["container"]}>
-      {/* <div className={styles["column"]}>
+      <div className={styles["column"]}>
         <span className={styles["rotation"]}>
           <h1>ARCHIVE</h1>
         </span>
-      </div> */}
+      </div>
       <div className={styles["column"]}>
         <div className={styles["archivePage"]}>
-          <div className={styles["archiveInner"]}>
+          {/* <div className={styles["archiveInner"]}>
             {filters.map((heading, index) => (
               <div key={index} className={styles["filterBox"]}>
                 <span
@@ -88,7 +103,7 @@ const ArchivePage = () => {
                 </span>
               </div>
             ))}
-          </div>
+          </div> */}
           <div className={styles["archiveContent"]}>
             <div className={styles["archiveHeaders"]}>
               <div className={styles["archiveTitle"]}>
@@ -96,22 +111,26 @@ const ArchivePage = () => {
                   <span>TITLE</span>
                 </span>
               </div>
-              <div className={styles["archiveTitle"]}>
+              <div className={styles["archiveTitleCont"]}>
                 <span className={styles["archiveTitleText"]}>
                   <span>CONTRIBUTOR</span>
                 </span>
               </div>
-              <div className={styles["archiveTitle"]}>
-                <span className={styles["archiveTitleText"]}>
-                  <span>LOCATION</span>
-                </span>
-              </div>
-              <div className={styles["archiveTitle"]}>
-                <span className={styles["archiveTitleText"]}>
-                  <span>CATEGORY</span>
-                </span>
-              </div>
-              <div className={styles["archiveTitle"]}>
+              {showLocation && (
+                <div className={styles["archiveTitleLoc"]}>
+                  <span className={styles["archiveTitleText"]}>
+                    <span>LOCATION</span>
+                  </span>
+                </div>
+              )}
+              {showCategory && (
+                <div className={styles["archiveTitleCat"]}>
+                  <span className={styles["archiveTitleText"]}>
+                    <span>CATEGORY</span>
+                  </span>
+                </div>
+              )}
+              <div className={styles["archiveTitleYear"]}>
                 <span className={styles["archiveTitleText"]}>
                   <span>YEAR</span>
                 </span>
@@ -120,7 +139,10 @@ const ArchivePage = () => {
             {/* New row creation bellow */}
             {archiveItems.map((archiveItem, index) => {
               const date = new Date(archiveItem.date);
-
+              const options = {
+                year: "numeric",
+              };
+              console.log(date);
               return (
                 <Link
                   to={`/event/${archiveItem.slug}`}
@@ -132,24 +154,28 @@ const ArchivePage = () => {
                         <p>{archiveItem.title}</p>
                       </span>
                     </div>
-                    <div className={styles["archiveTitle"]}>
+                    <div className={styles["archiveTitleCont"]}>
                       <span className={styles["archiveRowText"]}>
                         <p>{archiveItem.contributor}</p>
                       </span>
                     </div>
-                    <div className={styles["archiveTitle"]}>
-                      <span className={styles["archiveRowText"]}>
-                        <p>{archiveItem.location}</p>
-                      </span>
-                    </div>
-                    <div className={styles["archiveTitle"]}>
-                      <span className={styles["archiveRowText"]}>
-                        <p>{archiveItem.category}</p>
-                      </span>
-                    </div>
-                    <div className={styles["archiveTitle"]}>
-                      <span className={styles["archiveRowText"]}>
-                        <p>{date.toLocaleDateString("en-AU")}</p>
+                    {showLocation && (
+                      <div className={styles["archiveTitleLoc"]}>
+                        <span className={styles["archiveRowText"]}>
+                          <p>{archiveItem.location}</p>
+                        </span>
+                      </div>
+                    )}
+                    {showCategory && (
+                      <div className={styles["archiveTitleCat"]}>
+                        <span className={styles["archiveRowText"]}>
+                          <p>{archiveItem.category}</p>
+                        </span>
+                      </div>
+                    )}
+                    <div className={styles["archiveTitleYear"]}>
+                      <span className={styles["archiveRowTextYear"]}>
+                        {date.toLocaleDateString("en", options)}
                       </span>
                     </div>
                   </div>

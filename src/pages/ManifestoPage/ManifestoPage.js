@@ -7,9 +7,9 @@ import styles from "./manifesto.module.css";
 const ManifestoPage = (props) => {
   return (
     <div className={styles["outer"]}>
-      <div className={styles["column"]}>
+      {/* <div className={styles["column"]}>
         <span className={styles["rotation"]}>MANIFESTO</span>
-      </div>
+      </div> */}
       <div className={styles[("container", "column")]}>
         <div className={styles["left-col"]}>
           <div className={styles["fullheight"]}>
@@ -44,7 +44,7 @@ const ManifestoPage = (props) => {
           </div>
         </div>
       </div>
-      <div className={styles[("container", "column")]}>
+      <div className={styles["column"]}>
         <div className={styles["textbox"]}>
           <p>
             Architecture <br />
@@ -110,67 +110,6 @@ const ManifestoPage = (props) => {
             Traditional ecological knowledge (TEK) <br />
             Urban planning <br />
           </p>
-        </div>
-        <div className={styles["spaces-list"]}>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          Advocacy <br />
-          Events
-          <br />
-          Biodiversity Assembly <br />
-          Book Club
-          <br />
-          Bookshop
-          <br />
-          Calibration
-          <br />
-          Community <br />
-          Concept Development
-          <br />
-          Consultancy
-          <br />
-          Conversations <br />
-          Co-Working <br />
-          Curation <br />
-          Education
-          <br />
-          Exchange
-          <br />
-          Experiments
-          <br />
-          Field Trips <br />
-          Help Desk
-          <br />
-          Immersive Experiences
-          <br />
-          Resources
-          <br />
-          Meetups
-          <br />
-          Movement <br />
-          Network
-          <br />
-          Outdoors Club <br />
-          Readings
-          <br />
-          Prototyping
-          <br />
-          Research <br />
-          Spatial Design <br />
-          Talks
-          <br />
-          Workshops
-          <br />
         </div>
       </div>
     </div>

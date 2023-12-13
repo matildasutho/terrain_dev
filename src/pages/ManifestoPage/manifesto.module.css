@@ -92,17 +92,12 @@
     padding-top: var(--mob-pad-top);
     width: calc(100vw - 30px);
   }
-  /* .column {
-    width: 100vw;
-  } */
-  /* .textbox {
-    margin: 0px;
-    width: calc(100vw - 20px);
-  } */
-  /* .left-col {
-    width: 100vw;
-    padding-right: 10px;
-  } */
+  .column {
+    padding: 0px;
+  }
+  .image-container {
+    padding-left: calc(50vw - 75px);
+  }
   .fullheight {
     height: fit-content;
   }

@@ -155,3 +155,13 @@
     opacity: 1;
   }
 }
+@media only screen and (min-width: 970) {
+  .para-text {
+    font-size: 80px;
+    line-height: 96px;
+  }
+  .home-a {
+    font-size: 80px;
+    line-height: 96px;
+  }
+}

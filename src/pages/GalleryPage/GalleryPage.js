@@ -43,14 +43,6 @@ const galleryPage = (props) => {
             unprecedented and unforgettable experience.
             <br></br>
             <br></br>
-            Artwork details Left to right in the space: Anomalous Image
-            (PRG-DXB), 2023 PVC vinyl inkjet print on tempered glass 135x87cm
-            <br></br>
-            <br></br>
-            Anomalous Image (PRG-DXB), 2023 PVC vinyl inkjet print on tempered
-            glass 38x33cm
-            <br></br>
-            <br></br>
             Trent Crawford (b.1995) is a Naarm Melbourne-based artist whose work
             explores the impact of image-based technology and its subsequent
             effects on collective notions of truth, belief, and agency.

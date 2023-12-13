@@ -91,8 +91,8 @@ const AboutPage = () => {
               to parts of the planet far beyond the reach of our physical feet.
               <br></br>
               <br></br>
-              Where are you? Find out here{" "}
-              <a href="www.native-land.ca" target="_blank">
+              Where are you? Find out here &nbsp;
+              <a href="https://native-land.ca/" target="_blank">
                 www.native-land.ca
               </a>
               .

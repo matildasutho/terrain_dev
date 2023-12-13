@@ -30,11 +30,11 @@ const ManifestoPage = (props) => {
       setCurrentImage(image1);
     } else if (scrollPosition >= 200 && scrollPosition < 400) {
       setCurrentImage(image2);
-    } else if (scrollPosition >= 400 && scrollPosition < 600) {
+    } else if (scrollPosition >= 400 && scrollPosition < 800) {
       setCurrentImage(image3);
-    } else if (scrollPosition >= 600 && scrollPosition < 900) {
+    } else if (scrollPosition >= 800 && scrollPosition < 1400) {
       setCurrentImage(image4);
-    } else if (scrollPosition >= 900 && scrollPosition < 1300) {
+    } else if (scrollPosition >= 1400 && scrollPosition < 1900) {
       setCurrentImage(image5);
     }
   }, [scrollPosition]);

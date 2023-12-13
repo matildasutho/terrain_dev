@@ -1,5 +1,5 @@
 .container {
-  min-height: 100vh; /* Minimum height to fill the viewport */
+  min-height: 70vh; /* Minimum height to fill the viewport */
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -27,7 +27,7 @@
   font-weight: 200;
 }
 .fullheight {
-  min-height: calc(100vh - 120px);
+  height: fit-content;
 }
 .column {
   display: flex;

@@ -10,7 +10,7 @@ import CALENDAR from "../../assets/hover_thumbnails/CALENDAR.jpg";
 import CONTACT from "../../assets/hover_thumbnails/CONTACT.jpg";
 import FAQ from "../../assets/hover_thumbnails/FAQ.jpg";
 import GALLERY from "../../assets/hover_thumbnails/GALLERY.jpeg";
-import INDEX from "../../assets/hover_thumbnails/INDEX.jpg";
+import STUDIO from "../../assets/hover_thumbnails/STUDIO_img.jpg";
 import MANIFESTO from "../../assets/hover_thumbnails/MANIFESTO.jpg";
 import SERVICES from "../../assets/hover_thumbnails/SERVICES.jpg";
 
@@ -98,7 +98,7 @@ const Homepage = () => {
                 <Link
                   to={{ pathname: "/services", search: "?section=studio" }}
                   className={styles[("linktext", "buttonStyle")]}
-                  onMouseEnter={() => handleButtonHover(FAQ)}
+                  onMouseEnter={() => handleButtonHover(STUDIO)}
                   onMouseLeave={() => setHoverImg(null)}
                 >
                   <span className={styles["home-a"]}>

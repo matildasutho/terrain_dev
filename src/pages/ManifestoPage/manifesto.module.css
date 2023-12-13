@@ -7,6 +7,19 @@
 /* .outer > * {
   width: 30vw;
 } */
+.image-container {
+  position: fixed;
+  padding-left: calc(50vw - 100px);
+  padding-top: 8vh;
+  z-index: -5;
+  width: 200px;
+  height: auto;
+}
+.image-container > * {
+  width: 200px;
+  opacity: 0.5;
+  box-shadow: 2px 2px 25px black;
+}
 .outer {
   gap: 10px;
   display: flex;
@@ -21,6 +34,7 @@
   flex-direction: column;
   width: 50vw;
   margin: 0px 10px;
+  padding: 15px;
 }
 .column p {
   text-align: right;

@@ -60,6 +60,7 @@
   box-sizing: border-box;
   margin: 5px;
   animation: 6s fadeIn linear;
+  flex-shrink: 0;
 }
 .textcontentlink {
   font-size: inherit;

@@ -1,12 +1,50 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import styles from "./manifesto.module.css";
 import GradientTrail from "../../components/GradientTrail/GradientTrail";
+import Image from "../../components/Image/Image";
+
+import image1 from "../../assets/pic10.jpg";
+import image2 from "../../assets/pic11.JPG";
+import image3 from "../../assets/angel-compressed.jpg";
+import image4 from "../../assets/ice_pattern.png";
+import image5 from "../../assets/books.png";
 
 const ManifestoPage = (props) => {
+  const [scrollPosition, getScrollPositon] = useState(
+    document.documentElement.scrollTop
+  );
+  const [currentImage, setCurrentImage] = useState(null);
+
+  // hook and event handlers to keep track of and update scroll
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      getScrollPositon(document.documentElement.scrollTop);
+    });
+  }, []);
+
+  // Update the image based on scroll position
+  useEffect(() => {
+    console.log(scrollPosition);
+    if (scrollPosition < 200) {
+      setCurrentImage(image1);
+    } else if (scrollPosition >= 200 && scrollPosition < 400) {
+      setCurrentImage(image2);
+    } else if (scrollPosition >= 400 && scrollPosition < 600) {
+      setCurrentImage(image3);
+    } else if (scrollPosition >= 600 && scrollPosition < 900) {
+      setCurrentImage(image4);
+    } else if (scrollPosition >= 900 && scrollPosition < 1300) {
+      setCurrentImage(image5);
+    }
+  }, [scrollPosition]);
+
   return (
     <>
       <GradientTrail />
+      <div className={styles["image-container"]} style={{ marginTop: "20vh" }}>
+        <Image setImage={currentImage} />
+      </div>
       <div className={styles["outer"]}>
         {/* <div className={styles["column"]}>
         <span className={styles["rotation"]}>MANIFESTO</span>

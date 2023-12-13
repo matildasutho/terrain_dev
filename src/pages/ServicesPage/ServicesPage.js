@@ -59,40 +59,29 @@ const ServicesPage = () => {
               ref={creativeRef}
               className={styles["textbox"]}
             >
-              <h5>CREATIVE STUDIO</h5>
+              <h5>STUDIO</h5>
               <p>
-                TERRAIN emerged on the unceded land of the Wurundjeri Woi
-                Wurrung people of the Eastern Kulin Nations across broader Naarm
-                (Melbourne) and Ngár-go (Fitzroy). We acknowledge and pay
-                respect to their elders and ancestors past, present and
-                emerging, and to all First Nations people, for their wisdom and
-                connections with Country. For over 80,000 years, Aboriginal and
-                Torres Strait Islander people have lived in harmony with these
-                lands as the oldest living culture on Earth. We commit ourselves
-                to the ongoing process of unlearning colonial programing, as we
-                listen from our First Nations teachers about what it is to
-                meaningfully coexist with Country, which extends well beyond the
-                human to that within the lands, waters and skies. We acknowledge
-                First Nations knowledge systems as the first that reminded us
-                that we live in an interconnected world, that is
-                more-than-human. Through our operations, we actively seek to
-                recentre First Nations people and their knowledge within
-                society.
+                At TERRAIN, we are focused on seeding, producing, and enacting
+                the future we envision. Adjacent to our bookshop and gallery, we
+                host a dedicated private co-working studio for practitioners of
+                ecology across disciplines. Our private work environment is
+                designed to further and strengthen the practices, network, and
+                capabilities of each member by being supported and surrounded by
+                likeminds in a space grounded by ecological ideas, values and
+                ethics.
                 <br></br>
                 <br></br>
-                We also recognise that today we exist in relationship with many
-                places simultaneously. Our emerging digital territories of the
-                internet rely on infrastructures that encompass millions of data
-                servers, satellites in space, and undersea cables, connecting us
-                to parts of the planet far beyond the reach of our physical
-                feet.
+                Starting in 2024, the studio will host a small group of members
+                with ecology at the heart of their practices. Members are
+                encouraged to be actively engaged with public events in the
+                bookshop and gallery.
                 <br></br>
                 <br></br>
-                Where are you? Find out here{" "}
-                <a href="www.native-land.ca" target="_blank">
-                  www.native-land.ca
+                If you are interested in being one of our first studio members,
+                please submit an online expression of interest form{" "}
+                <a href="https://tally.so/r/wkN0jo" target="_blank">
+                  here
                 </a>
-                .
               </p>
             </div>
           </div>
@@ -104,30 +93,16 @@ const ServicesPage = () => {
             >
               <h5>WORKSHOPS</h5>
               <p>
-                We regret that we are unable to provide accessible entry to our
-                space. Please reach out to us at hello@terrain.earth if an
-                access ramp is required for our main entry on Brunswick Street
-                with one step so that we can accommodate your visit. Our space
-                is cavernous with a high ceiling that maintains a stable
-                temperature year round, and we do not run air conditioning
-                unless on days with extreme temperatures where we will try to
-                make the space as comfortable to visitors as possible. We are
-                unable to provide restroom facilities at this time. People of
-                all ages are welcome, however - nature doesn’t always have
-                straight lines and soft edges, and neither does our space, so
-                please be careful and we kindly ask that children are
-                supervised.
+                Workshops activate our vision across a variety of environments,
+                with hands-on nature-orienting activities and experiences. These
+                may vary from school classrooms, to corporate team building to
+                professional development spaces. We can host groups in our
+                space, or we can come to you.
                 <br></br>
                 <br></br>
-                We are continuously looking to improve and evolve our
-                accessibility practices and policies to ensure our operations
-                are welcoming to diverse perspectives and abilities. If you are
-                having difficulty accessing any of our physical or digital
-                experiences and operations, or have any specific feedback, we
-                want to hear from you. Please contact us if you would like any
-                other information about our space prior to visiting or have
-                suggestions for how we can improve. We appreciate your feedback
-                and value your perspective.
+                Our workshops on offer rotate seasonally, so please get in touch
+                with us to ask what’s currently on offer and for all booking
+                requests.
               </p>
             </div>
           </div>
@@ -139,20 +114,32 @@ const ServicesPage = () => {
             >
               <h5>CONSULTANCY</h5>
               <p>
-                TERRAIN stands as an independent initiative and a purpose-driven
-                social enterprise with a core commitment to addressing pressing
-                social and environmental challenges through education. Our
-                business model is rooted in a triple bottom line approach, that
-                prioritises a commitment to having an overall positive impact on
-                society and the environment, placing equal, if not greater,
-                emphasis alongside our growth.
+                Organisations and industries must proactively prepare for the
+                environmental challenges and future that’s already here.
                 <br></br>
                 <br></br>
-                As we reinvest our earnings into projects that drive this
-                mission forward, TERRAIN functions like an evolving organism. We
-                pilot impact-led projects as experimental prototypes and spaces,
-                which may later become integral parts of our ongoing business
-                operations and offerings.
+                We offer consulting and project services to help organisations
+                and individuals integrate ecological ethics and more-than-human
+                perspectives into their work.
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <h5>OUR CAPABILITIES INCLUDE</h5>
+                <br></br>
+                <br></br>+ &nbsp;&nbsp;Concept development, project management,
+                curation, spatial and experience design, and research.
+                <br></br>
+                <br></br>+ &nbsp;&nbsp;Public engagement, speaking, mentorship,
+                writing contributions, media.
+                <br></br>
+                <br></br>+ &nbsp;&nbsp;Applied sustainability for your
+                organisation, business or project.
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                Contact us if you would like to work together.
               </p>
             </div>
           </div>
@@ -162,20 +149,17 @@ const ServicesPage = () => {
           <div id="spacehire" ref={spacehireRef} className={styles["textbox"]}>
             <h5>SPACE HIRE</h5>
             <p>
-              TERRAIN stands as an independent initiative and a purpose-driven
-              social enterprise with a core commitment to addressing pressing
-              social and environmental challenges through education. Our
-              business model is rooted in a triple bottom line approach, that
-              prioritises a commitment to having an overall positive impact on
-              society and the environment, placing equal, if not greater,
-              emphasis alongside our growth.
+              Have an event in mind? Our space is available to hire to our
+              community, which offers audio-visual capabilities, including
+              surround sound and large displays for immersive experiences in an
+              intimate setting. We have a seated capacity of 21 on our aluminium
+              benches, and are happy to discuss alternative spatial arrangements
+              and settings to try to accommodate your event.
               <br></br>
               <br></br>
-              As we reinvest our earnings into projects that drive this mission
-              forward, TERRAIN functions like an evolving organism. We pilot
-              impact-led projects as experimental prototypes and spaces, which
-              may later become integral parts of our ongoing business operations
-              and offerings.
+              Send us your enquiry and be sure to include details of what you
+              have in mind. Please note that given the nature of our space, not
+              all requests will be accepted.
             </p>
           </div>
         </div>

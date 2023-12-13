@@ -2,6 +2,8 @@ import React from "react";
 
 import GalleryImage from "../../assets/gallery_img.jpg";
 
+import PageTitle from "../../components/PageTitle/PageTitle.js";
+
 import Image from "../../components/Image/Image";
 
 import styles from "./gallerypage.module.css";
@@ -11,12 +13,9 @@ const galleryPage = (props) => {
     <div className={styles["outer"]}>
       <div className={styles["left-col"]}>
         <div className={styles["text-img"]}>
+          <PageTitle title={"NOW SHOWING"} />
           <span>
-            <h1>
-              NOW SHOWING:
-              <br></br>
-              THE ANOMALOUS IMAGE, BY TRENT CRAWFORD.
-            </h1>
+            <h1>THE ANOMALOUS IMAGE, BY TRENT CRAWFORD.</h1>
           </span>
         </div>
       </div>

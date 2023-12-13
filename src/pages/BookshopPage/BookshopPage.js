@@ -1,6 +1,6 @@
 import React from "react";
 
-import BookshopImage from "../../assets/ngv-abf-2020-1.png";
+import BookshopImage from "../../assets/bookshop_img.jpg";
 
 import Image from "../../components/Image/Image";
 
@@ -23,7 +23,7 @@ const bookshopPage = () => {
           </h3>
         </div>
 
-        <div className={styles["fullheight"]}>
+        <div className={styles["fullheight2"]}>
           <h3 className={styles["bookshop-quote"]}>
             Our world was (and continues to be) colonised through storytelling.
             Stories have the potential to divide us, but they also have the
@@ -45,14 +45,16 @@ const bookshopPage = () => {
               <br></br>
               <br></br>
               We hand source our books from local and international authors,
-              ensure a diverse range of perspectives, and continuously update
-              and expand our selections with new releases. In addition to being
-              a bookshop, our space hosts intimate meetings and events. These
-              include talks, book launches, performances, readings, meetups,
-              prototype activations, micro-exhibits, and workshops. Through
-              these local gatherings, we hope to foster meaningful connections
-              and a community with a shared passion for applied ecological
-              thinking.
+              ensuring a diverse range of perspectives, and continuously update
+              and expand our selections with new releases.
+              <br></br>
+              <br></br>
+              In addition to being a bookshop, our space hosts intimate meetings
+              and events. These include (but are not limited to) talks, book
+              launches, performances, readings, meetups, prototype activations,
+              exhibitions, and workshops. Through these local gatherings, we
+              hope to foster meaningful connections and a community with a
+              shared passion for applied ecological thinking.
             </p>
           </div>
         </div>

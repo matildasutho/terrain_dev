@@ -57,7 +57,7 @@ const ServicesMenu = ({
                 : styles["NonCurrentTab"]
             }
           >
-            <h3>CREATIVE STUDIO</h3>
+            <h3>STUDIO</h3>
           </span>
         </div>
         <div

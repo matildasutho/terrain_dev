@@ -5,8 +5,7 @@
   /* padding-top: 100px;
   padding-left: 160px; */
   overflow: hidden;
-  position: absolute;
-  z-index: 20;
+  /* background-color: #f6f6f6; */
 }
 .homepage {
   gap: 10px;
@@ -32,22 +31,22 @@
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: -10;
+  z-index: -2;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0);
 }
 .para-text {
   font-family: "GT America";
   font-weight: 200;
-  font-size: 32px;
-  line-height: 56px;
+  font-size: 42px;
+  line-height: 64px;
   mix-blend-mode: multiply;
 }
 .home-a {
   font-family: "GT America";
   font-weight: 200;
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 42px;
+  line-height: 64px;
   color: black;
 }
 .home-a:hover {
@@ -60,6 +59,7 @@
   color: rgba(0, 0, 0, 1);
   box-sizing: border-box;
   margin: 5px;
+  animation: 6s fadeIn linear;
 }
 .textcontentlink {
   font-size: inherit;
@@ -70,9 +70,9 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  background-color: #f6f6f6;
+  background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 1);
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 45px;
@@ -125,13 +125,32 @@
     height: auto;
   }
   .para-text {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 36px;
   }
   .home-a {
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 32px;
   }
-  .text-content {
-    width: 375px;
+  .textcontent {
+    width: calc(100vw - 20px);
+    margin: 10px;
+  }
+  .terrainlogo {
+    width: 90vw;
+
+    margin-left: 5vw;
+    margin-top: 40vh;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

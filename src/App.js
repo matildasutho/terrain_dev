@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
 import EmailForm from "./components/EmailForm/EmailForm.js";
-import GradientTrail from "./components/GradientTrail/GradientTrail.js";
 
 import AboutPage from "./pages/AboutPage/AboutPage.js";
 import ArchivePage from "./pages/ArchivePage/ArchivePage.js";
@@ -17,6 +16,8 @@ import GardenPage from "./pages/GardenPage/GardenPage.js";
 import HomePage from "./pages/HomePage/HomePage.js";
 import ManifestoPage from "./pages/ManifestoPage/ManifestoPage.js";
 import ServicesPage from "./pages/ServicesPage/ServicesPage.js";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy.js";
+import TermsConditions from "./pages/TermsConditions/TermsConditions.js";
 
 import "./App.css";
 
@@ -28,7 +29,6 @@ function App() {
       <Header currentPage={currentPage} />
 
       <div className="container">
-        <GradientTrail />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
@@ -41,6 +41,8 @@ function App() {
           <Route path="/garden" element={<GardenPage />} />
           <Route path="/manifesto" element={<ManifestoPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/termsconditions" element={<TermsConditions />} />
         </Routes>
         <EmailForm />
       </div>

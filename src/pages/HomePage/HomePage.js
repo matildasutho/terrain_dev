@@ -48,6 +48,7 @@ const Homepage = () => {
             className={styles["terrainlogo"]}
           />
         </div>
+
         <div className={styles["textcontent"]}>
           <span>
             <span className={styles["para-text"]}>
@@ -92,21 +93,20 @@ const Homepage = () => {
                   </span>
                 </Link>
               </div>
-              , outdoors club, and studio in Ngár-go/Fitzroy on Wurundjeri Land.
-              You can see what's on our
+              &nbsp;, and
               <div className={styles["textcontentlink"]}>
                 <Link
-                  to="/calendar"
+                  to={{ pathname: "/services", search: "?section=studio" }}
                   className={styles[("linktext", "buttonStyle")]}
-                  onMouseEnter={() => handleButtonHover(CALENDAR)}
+                  onMouseEnter={() => handleButtonHover(FAQ)}
                   onMouseLeave={() => setHoverImg(null)}
                 >
                   <span className={styles["home-a"]}>
-                    <span>CALENDAR</span>
+                    <span>STUDIO</span>
                   </span>
                 </Link>
               </div>
-              . Read more
+              &nbsp;in Ngár-go/Fitzroy on Wurundjeri Land. Read more
               <div className={styles["textcontentlink"]}>
                 <Link
                   to="/about"
@@ -119,7 +119,7 @@ const Homepage = () => {
                   </span>
                 </Link>
               </div>
-              , forage through our
+              {/* , forage through our
               <div className={styles["textcontentlink"]}>
                 <Link
                   to="/garden"
@@ -129,8 +129,8 @@ const Homepage = () => {
                 >
                   <span className={styles["home-a"]}>INDEX</span>
                 </Link>
-              </div>
-              , seek our
+              </div> */}
+              &nbsp;, seek our
               <div className={styles["textcontentlink"]}>
                 <Link
                   to="/services"
@@ -141,7 +141,7 @@ const Homepage = () => {
                   <span className={styles["home-a"]}>SERVICES</span>
                 </Link>
               </div>
-              &nbsp;or
+              &nbsp;or feel free to
               <div className={styles["textcontentlink"]}>
                 <Link
                   to="/contact"
@@ -152,7 +152,8 @@ const Homepage = () => {
                   <span className={styles["home-a"]}>REACH OUT</span>
                 </Link>
               </div>
-              &nbsp;directly. If there's any burning questions you can read the
+              &nbsp;directly.
+              <br></br>For any burning questions, read our
               <div className={styles["textcontentlink"]}>
                 <Link
                   to={{ pathname: "/about", search: "?section=faq" }}
@@ -168,8 +169,7 @@ const Homepage = () => {
               .
               <br />
               <br />
-              Oh, and, this is a 100% renewably powered and self-hosted website,
-              using 0.123 watts of electricity per visitor.
+              Oh, and, this is a renewably powered and self-hosted website.
             </span>
           </span>
         </div>

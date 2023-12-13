@@ -16,7 +16,24 @@
   font-size: 80px;
   padding: 5px;
 }
-
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+.footer p {
+  font-size: 8px;
+  line-height: 12px;
+  font-family: "GT America";
+  font-weight: 200;
+  text-align: right;
+}
+.footer a {
+  font-size: 8px;
+  line-height: 12px;
+  font-family: "GT America";
+  font-weight: 200;
+  text-align: right;
+}
 @media only screen and (max-width: 970px) {
   .footer {
     height: 45px;

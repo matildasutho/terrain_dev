@@ -60,19 +60,21 @@
   font-size: var(--menu-font);
   line-height: var(--menu-font);
   font-weight: 200;
-  color: rgba(0, 0, 0, 1);
+  color: #0f45c9;
   font-stretch: normal;
   text-decoration: none;
-  border: 0.5px solid rgba(0, 0, 0, 1);
+  border: 0.5px solid #0f45c9;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  background-color: #82f74f;
+  background-color: rgba(246, 246, 246, 0.9);
   border-radius: 15px;
   padding: 3px 6px;
   margin: 3px 10px;
 }
 .currentpagemainmenu:hover {
   text-decoration: none;
-  color: black;
+  color: #0f45c9;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: rgba(246, 246, 246, 0.9);
 }
 
 .linktext {
@@ -84,7 +86,7 @@
   text-decoration: none;
   border: 0.5px solid rgba(0, 0, 0, 1);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.9);
   border-radius: 15px;
   padding: 3px 6px;
   margin: 3px 10px;
@@ -93,6 +95,7 @@
   background-color: #82f74f;
   border-radius: 15px;
   text-decoration: none;
+  border-color: rgba(0, 0, 0, 0);
   color: black;
 }
 .linktext:active {
@@ -109,7 +112,7 @@
   font-family: "GT America";
   font-weight: 200;
   line-height: 10px;
-  padding: 10px 5px;
+  padding: 15px 15px;
   color: black;
 }
 
@@ -118,7 +121,7 @@
   height: 100%;
   background-color: #f6f6f6;
   position: fixed;
-  margin-top: 66px;
+  margin-top: 90px;
   padding-top: 20px;
   z-index: 15;
   top: 0vh;

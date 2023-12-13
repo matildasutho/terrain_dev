@@ -1,0 +1,11 @@
+.container {
+  padding-top: var(--top-pad);
+  padding-left: var(--left-pad);
+  width: 50vw;
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    padding-top: var(--mob-pad-top);
+    padding-left: var(--mob-pad-left);
+  }
+}

@@ -31,9 +31,18 @@
 }
 @media only screen and (max-width: 970px) {
   .ServicesMenuContainer {
-    padding-top: var(--mob-top-pad);
+    padding-top: 20px;
+
     width: 100vw;
-    background-image: linear-gradient(#f6f6f6, 90%, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      5%,
+      #f6f6f6,
+      40%,
+      #f6f6f6,
+      90%,
+      rgba(255, 255, 255, 0)
+    );
   }
   .ServicesMenu {
     /* background-color: #f6f6f6; */

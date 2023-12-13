@@ -6,7 +6,6 @@ const AboutMenu = ({
   landRef,
   accessibilityRef,
   businessModelRef,
-  fundingRef,
   faqRef,
   scrollToSection,
 }) => {
@@ -15,7 +14,6 @@ const AboutMenu = ({
     landAcknowledgement: landRef,
     accessibility: accessibilityRef,
     businessModel: businessModelRef,
-    funding: fundingRef,
     faq: faqRef,
   };
 
@@ -92,20 +90,7 @@ const AboutMenu = ({
             <h3>BUSINESS MODEL</h3>
           </span>
         </div>
-        <div
-          className={styles["AboutMenuSubHeading"]}
-          onClick={() => scrollToSection(fundingRef)}
-        >
-          <span
-            className={
-              activeTab === "funding"
-                ? styles["CurrentTab"]
-                : styles["NonCurrentTab"]
-            }
-          >
-            <h3>FUNDING</h3>
-          </span>
-        </div>
+
         <div
           className={styles["AboutMenuSubHeading"]}
           onClick={() => scrollToSection(faqRef)}

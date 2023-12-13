@@ -76,7 +76,7 @@
   .outer {
     padding-left: var(--mob-pad-left);
     padding-top: var(--mob-pad-top);
-    width: 100vw;
+    width: calc(100vw - 30px);
   }
   /* .column {
     width: 100vw;

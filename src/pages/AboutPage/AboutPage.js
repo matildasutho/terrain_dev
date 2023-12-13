@@ -15,7 +15,6 @@ const AboutPage = () => {
   const accessibilityRef = useRef(null);
   const businessModelRef = useRef(null);
   const faqRef = useRef(null);
-  const fundingRef = useRef(null);
 
   const scrollToSection = (ref) => {
     const element = ref.current;
@@ -43,9 +42,6 @@ const AboutPage = () => {
     if (section === "faq") {
       scrollToSection(faqRef);
     }
-    if (section === "funding") {
-      scrollToSection(fundingRef);
-    }
   }, [section]);
 
   return (
@@ -56,7 +52,6 @@ const AboutPage = () => {
         accessibilityRef={accessibilityRef}
         businessModelRef={businessModelRef}
         faqRef={faqRef}
-        fundingRef={fundingRef}
         scrollToSection={scrollToSection}
       />
 
@@ -111,18 +106,19 @@ const AboutPage = () => {
           <h5>ACCESSIBILITY</h5>
           <p>
             We regret that we are unable to provide accessible entry to our
-            space. Please reach out to us at hello@
-            <a className={styles["logo-insitu"]}>TERRAIN</a>.earth if an access
+            space. Please reach out to us at hello@terrain.earth if an access
             ramp is required for our main entry on Brunswick Street with one
-            step so that we can accommodate your visit. Our space is cavernous
-            with a high ceiling that maintains a stable temperature year round,
-            and we do not run air conditioning unless on days with extreme
-            temperatures where we will try to make the space as comfortable to
-            visitors as possible. We are unable to provide restroom facilities
-            at this time. People of all ages are welcome, however - nature
-            doesn’t always have straight lines and soft edges, and neither does
-            our space, so please be careful and we kindly ask that children are
-            supervised.
+            step so that we can accommodate your visit.
+            <br></br>
+            <br></br>
+            Our space is cavernous with a high ceiling that maintains a stable
+            temperature year round, and we do not run air conditioning unless on
+            days with extreme temperatures where we will try to make the space
+            as comfortable to visitors as possible. We are unable to provide
+            restroom facilities at this time. People of all ages are welcome,
+            however - nature doesn’t always have straight lines and soft edges,
+            and neither does our space, so please be careful and we kindly ask
+            that children are supervised.
             <br></br>
             <br></br>
             We are continuously looking to improve and evolve our accessibility
@@ -144,52 +140,24 @@ const AboutPage = () => {
         >
           <h5>BUSINESS MODEL</h5>
           <p>
-            <a className={styles["logo-insitu"]}>TERRAIN</a> stands as an
-            independent initiative and a purpose-driven social enterprise with a
-            core commitment to addressing pressing social and environmental
-            challenges through education. Our business model is rooted in a
-            triple bottom line approach, that prioritises a commitment to having
-            an overall positive impact on society and the environment, placing
-            equal, if not greater, emphasis alongside our growth.
+            TERRAIN stands as an independent initiative and a purpose-driven
+            social enterprise with a core commitment to addressing pressing
+            social and environmental challenges through education. Our business
+            model is rooted in a triple bottom line approach, that prioritises a
+            commitment to having an overall positive impact on society and the
+            environment, placing equal, if not greater, emphasis on these
+            elements alongside our growth.
             <br></br>
             <br></br>
             As we reinvest our earnings into projects that drive this mission
-            forward, <a className={styles["logo-insitu"]}>TERRAIN</a> functions
-            like an evolving organism. We pilot impact-led projects as
-            experimental prototypes and spaces, which may later become integral
-            parts of our ongoing business operations and offerings.
+            forward, TERRAIN functions like an evolving organism. We pilot
+            impact-led projects as experimental prototypes and spaces, which may
+            later become integral parts of our ongoing business operations and
+            offerings.
           </p>
         </div>
       </div>
 
-      <div className={styles["AboutSection"]}>
-        <div id="funding" ref={fundingRef} className={styles["textbox"]}>
-          <h5>FUNDING</h5>
-          <div className={styles["fundingtext"]}>
-            <p>
-              <a className={styles["logo-insitu"]}>TERRAIN</a> values the
-              contributions of artists and creators and makes every effort to
-              give proper attribution and references. Any inadvertent errors in
-              acknowledging individuals or organisations are entirely
-              unintentional. Citation of others as indexes and wikis recognises
-              the global nature of information, and connects not only people but
-              all things.
-              <br></br>
-              <br></br>Thanks to the incredible generosity of philanthropic
-              support from the Kalliopeia Foundation in Northern California,
-              we’ve been able to launch this initiative in Australia.
-              <br></br>US Tax deductible donations to&nbsp;
-              <a className={styles["logo-insitu"]}>TERRAIN</a>
-              &nbsp;may be made to our fiscal sponsor Cloud Forest Institute, a
-              501c (3) non-profit corporation. Please write &nbsp;
-              <a className={styles["logo-insitu"]}>TERRAIN</a>
-              &nbsp; in the memo line of your contribution. Link: PayPal link
-              Donate to Cloud Forest Institute
-            </p>
-            <br></br>
-          </div>
-        </div>
-      </div>
       <div className={styles["AboutSection"]}>
         <div id="faq" ref={faqRef} className={styles["textbox"]}>
           <h5>FAQ</h5>

@@ -1,8 +1,8 @@
 :root {
-  --mob-pad-top: 70px;
+  --mob-pad-top: 90px;
   --mob-pad-left: 10px;
-  --left-pad: 5px;
-  --top-pad: 128px;
+  --left-pad: 150px;
+  --top-pad: 168px;
 }
 
 @font-face {
@@ -67,7 +67,7 @@ code {
 h1 {
   font-family: "Zurich";
   font-size: 64px;
-  line-height: 64px;
+  line-height: 55px;
 }
 h2 {
   font-family: "Zurich";

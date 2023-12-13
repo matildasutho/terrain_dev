@@ -2,8 +2,6 @@ import React from "react";
 
 import GalleryImage from "../../assets/ngv-abf-2020-1-1.png";
 
-import PageTitle from "../../components/PageTitle/PageTitle";
-
 import Image from "../../components/Image/Image";
 
 import styles from "./gallerypage.module.css";
@@ -12,7 +10,6 @@ const galleryPage = (props) => {
   return (
     <div className={styles["outer"]}>
       <div className={styles["left-col"]}>
-        <PageTitle title={"GALLERY"} />
         <div className={styles["text-img"]}>
           <span>
             <h1>

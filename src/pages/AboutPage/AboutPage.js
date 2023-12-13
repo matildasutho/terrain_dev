@@ -68,15 +68,16 @@ const AboutPage = () => {
         >
           <h5>LAND ACKNOWLEDGEMENT</h5>
           <p>
-            <a className={styles["logo-insitu"]}>TERRAIN</a> emerged on the
-            unceded land of the Wurundjeri Woi Wurrung people of the Eastern
-            Kulin Nations across broader Naarm (Melbourne) and Ngár-go
-            (Fitzroy). We acknowledge and pay respect to their elders and
-            ancestors past, present and emerging, and to all First Nations
-            people, for their wisdom and connections with Country. For over
-            80,000 years, Aboriginal and Torres Strait Islander people have
-            lived in harmony with these lands as the oldest living culture on
-            Earth. We commit ourselves to the ongoing process of unlearning
+            TERRAIN emerged on the unceded land of the Wurundjeri Woi Wurrung
+            people of the Eastern Kulin Nations across broader Naarm (Melbourne)
+            and Ngár-go (Fitzroy). We acknowledge and pay respect to their
+            elders and ancestors past, present and emerging, and to all First
+            Nations people, for their wisdom and connections with Country.
+            <br></br>
+            <br></br>
+            For over 80,000 years, Aboriginal and Torres Strait Islander people
+            have lived in harmony with these lands as the oldest living culture
+            on Earth. We commit ourselves to the ongoing process of unlearning
             colonial programing, as we listen from our First Nations teachers
             about what it is to meaningfully coexist with Country, which extends
             well beyond the human to that within the lands, waters and skies. We

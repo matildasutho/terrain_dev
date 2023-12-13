@@ -2,13 +2,10 @@ import React from "react";
 
 import styles from "./contact.module.css";
 
-import PageTitle from "../../components/PageTitle/PageTitle";
-
 const ContactPage = () => {
   return (
     <div className={styles["outer"]}>
       <div className={styles["contactPage"]}>
-        <PageTitle title={"CONTACT"} />
         <div className={styles[("container", "column")]}>
           <div className={styles["fullheight"]}>
             <div className={styles["textbox"]}>

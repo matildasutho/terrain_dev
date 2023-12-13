@@ -3,7 +3,6 @@ import React from "react";
 import BookshopImage from "../../assets/ngv-abf-2020-1.png";
 
 import Image from "../../components/Image/Image";
-import PageTitle from "../../components/PageTitle/PageTitle";
 
 import styles from "./bookshop.module.css";
 
@@ -12,9 +11,7 @@ const bookshopPage = () => {
     <div className={styles["outer"]}>
       <div className={styles[("container", "column")]}>
         <div className={styles["left-col"]}>
-          <div className={styles["fullheight"]}>
-            <PageTitle title={"BOOKSHOP"} />
-          </div>
+          <div className={styles["fullheight"]}></div>
           <div className={styles["fullheight"]}>
             <h3 className={styles["bookshop-quote"]}>
               "A TERRAIN IS LIKE AN OPEN BOOK; IT GIVES AN ENORMOUS AMOUNT OF

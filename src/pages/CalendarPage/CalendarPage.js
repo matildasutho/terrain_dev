@@ -5,8 +5,6 @@ import { getProjects } from "../../api/contenful/utils";
 
 import styles from "./calendar.module.css";
 
-import PageTitle from "../../components/PageTitle/PageTitle";
-
 const CalendarPage = () => {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -127,7 +125,6 @@ const CalendarPage = () => {
 
   return (
     <div className={styles["container"]}>
-      <PageTitle title={"CALENDAR"} />
       <div className={styles["column"]}>
         <div className={styles["calendarPage"]}>
           {mobileView ? (

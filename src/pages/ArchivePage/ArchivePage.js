@@ -75,9 +75,6 @@ const ArchivePage = () => {
   return (
     <div className={styles["container"]}>
       <div className={styles["column"]}>
-        <PageTitle title={"ARCHIVE"} />
-      </div>
-      <div className={styles["column"]}>
         <div className={styles["archivePage"]}>
           {/* <div className={styles["archiveInner"]}>
             {filters.map((heading, index) => (

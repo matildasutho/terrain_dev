@@ -81,6 +81,20 @@ const Header = () => {
               </div>
               <div className={styles["mainmenu"]}>
                 <Link
+                  to="/manifesto"
+                  className={
+                    currentPage === "manifesto"
+                      ? styles["currentpagemainmenu"]
+                      : styles["linktext"]
+                  }
+                >
+                  MANIFESTO
+                </Link>
+              </div>
+            </div>
+            <div className={styles["menucolumn"]}>
+              <div className={styles["mainmenu"]}>
+                <Link
                   to="/bookshop"
                   className={
                     currentPage === "bookshop"
@@ -104,32 +118,8 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className={styles["menucolumn"]}>
-              <div className={styles["mainmenu"]}>
-                <Link
-                  to="/manifesto"
-                  className={
-                    currentPage === "manifesto"
-                      ? styles["currentpagemainmenu"]
-                      : styles["linktext"]
-                  }
-                >
-                  MANIFESTO
-                </Link>
-              </div>
-              <div className={styles["mainmenu"]}>
-                <Link
-                  to="/services"
-                  className={
-                    currentPage === "services"
-                      ? styles["currentpagemainmenu"]
-                      : styles["linktext"]
-                  }
-                >
-                  SERVICES
-                </Link>
-              </div>
-              <div className={styles["mainmenu"]}>
+
+            {/* <div className={styles["mainmenu"]}>
                 <Link
                   to="/calendar"
                   className={
@@ -140,10 +130,10 @@ const Header = () => {
                 >
                   CALENDAR
                 </Link>
-              </div>
-            </div>
+              </div> */}
+
             <div className={styles["menucolumn"]}>
-              <div className={styles["mainmenu"]}>
+              {/* <div className={styles["mainmenu"]}>
                 <Link
                   to="/garden"
                   className={
@@ -154,8 +144,8 @@ const Header = () => {
                 >
                   INDEX
                 </Link>
-              </div>
-              <div className={styles["mainmenu"]}>
+              </div> */}
+              {/* <div className={styles["mainmenu"]}>
                 <Link
                   to="/archive"
                   className={
@@ -165,6 +155,18 @@ const Header = () => {
                   }
                 >
                   ARCHIVE
+                </Link>
+              </div> */}
+              <div className={styles["mainmenu"]}>
+                <Link
+                  to="/services"
+                  className={
+                    currentPage === "services"
+                      ? styles["currentpagemainmenu"]
+                      : styles["linktext"]
+                  }
+                >
+                  SERVICES
                 </Link>
               </div>
               <div className={styles["mainmenu"]}>

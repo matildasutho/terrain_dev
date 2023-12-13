@@ -1,8 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import TerrainLogo from "../../assets/TERRAIN-logo-scaleable 1.svg";
+import TerrainLogoRelief from "../../assets/TERRAIN-f6f6f6-transparency-digital.png";
 
 import ABOUT from "../../assets/hover_thumbnails/ABOUT.jpg";
 import BOOKSHOP from "../../assets/hover_thumbnails/BOOKSHOP.png";
@@ -25,7 +25,7 @@ const Homepage = () => {
     console.log(imagePath);
   };
 
-  const handleMouseMove = (e) => {
+  const handleImageMouseMove = (e) => {
     setImgPosition({ x: e.clientX, y: e.clientY });
   };
 
@@ -37,22 +37,22 @@ const Homepage = () => {
   return (
     <div
       className={styles["container"]}
-      onMouseMove={handleMouseMove}
+      onMouseMove={handleImageMouseMove}
       style={{ position: "relative" }}
     >
       <div className={styles["homepage"]}>
+        <div className={styles["logotext"]}>
+          <img
+            src={TerrainLogoRelief}
+            alt="terrainlogo"
+            className={styles["terrainlogo"]}
+          />
+        </div>
         <div className={styles["textcontent"]}>
           <span>
             <span className={styles["para-text"]}>
-              <span className={styles["logotext"]}>
-                <img
-                  src={TerrainLogo}
-                  alt="terrainlogo"
-                  className={styles["terrainlogo"]}
-                />
-              </span>{" "}
-              is an initiative that creates playful physical and digital spaces
-              to remind humans that they are embedded in a more-than-human world
+              An initiative that creates playful physical and digital spaces to
+              remind humans that they are embedded in a more-than-human world
               <div
                 className={styles["textcontentlink"]}
                 onMouseOver={() => handleButtonHover}

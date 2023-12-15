@@ -1,14 +1,14 @@
 .trail {
   position: absolute;
-  width: 123px;
-  height: 123px;
+  width: 86px;
+  height: 86px;
   border-radius: 50%;
   background: radial-gradient(#82f74f, #f6f6f6);
   pointer-events: none;
 }
 .gradientCont {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   z-index: 10;
   mix-blend-mode: multiply;

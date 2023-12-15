@@ -23,8 +23,12 @@ const ContactPage = () => {
             <a href="/termsconditions">Terms and Conditions</a>.<br></br>
             <br></br>
             This is a renewably-powered self-hosted website.
-            <b></b>
-            <div class="klaviyo-form-WdFuEM"></div>
+            <br></br>
+            <br></br>
+            <div className={styles["subscribe"]}>
+              {" "}
+              <div class="klaviyo-form-WdFuEM"></div>
+            </div>
           </div>
 
           <div className={styles["column"]}>

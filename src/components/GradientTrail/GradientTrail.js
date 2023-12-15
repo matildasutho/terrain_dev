@@ -28,7 +28,7 @@ const GradientTrail = () => {
   useEffect(() => {
     const frameInterval = setInterval(() => {
       frame();
-    }, 500 / 6); // 60 frames per second, adjust as needed
+    }, 500 / 10); // 60 frames per second, adjust as needed
 
     return () => clearInterval(frameInterval);
   }, []); // Empty dependency array to run the effect only once on page load

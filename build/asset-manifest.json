@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f6764fb.css",
-    "main.js": "/static/js/main.be6c5d09.js",
+    "main.css": "/static/css/main.bee7cbdc.css",
+    "main.js": "/static/js/main.e57eefae.js",
     "static/js/787.63326563.chunk.js": "/static/js/787.63326563.chunk.js",
-    "static/media/ngv-abf-2020-1.png": "/static/media/ngv-abf-2020-1.fb5dd2e0f661d0d67fde.png",
-    "static/media/gaudism-1.png": "/static/media/gaudism-1.ffb30d17a38c89a7e9ae.png",
+    "static/media/books.png": "/static/media/books.e8b155b8253409ff7f2d.png",
+    "static/media/ice_pattern.png": "/static/media/ice_pattern.c079f778dbae6afafec5.png",
+    "static/media/bookshop_img.jpg": "/static/media/bookshop_img.16aae8add80d11479e66.jpg",
+    "static/media/pic10.jpg": "/static/media/pic10.61de9851a38800a40858.jpg",
+    "static/media/gallery_img.jpg": "/static/media/gallery_img.9be1d37b252aa0da13b0.jpg",
+    "static/media/TERRAIN-f6f6f6-transparency-digital.png": "/static/media/TERRAIN-f6f6f6-transparency-digital.570831a09ecde119eb5f.png",
     "static/media/BOOKSHOP.png": "/static/media/BOOKSHOP.1de9f747c9df4a477950.png",
-    "static/media/ngv-abf-2020-1-1.png": "/static/media/ngv-abf-2020-1-1.fbfd03c361f4c3ba0658.png",
     "static/media/CALENDAR.jpg": "/static/media/CALENDAR.1578965cd2eedd131a57.jpg",
     "static/media/CONTACT.jpg": "/static/media/CONTACT.cfec8cc9b3e3b5332221.jpg",
     "static/media/GT-America-Mono-Light.ttf": "/static/media/GT-America-Mono-Light.2c80dd812d2a0dbb17f0.ttf",
@@ -15,18 +18,20 @@
     "static/media/MANIFESTO.jpg": "/static/media/MANIFESTO.e6f34d7e7217b7c87985.jpg",
     "static/media/ABOUT.jpg": "/static/media/ABOUT.50c545264e29851a5b35.jpg",
     "static/media/GALLERY.jpeg": "/static/media/GALLERY.519a8e5690b55719d319.jpeg",
+    "static/media/STUDIO_img.jpg": "/static/media/STUDIO_img.d8ed30bf6be7aeeea3a9.jpg",
+    "static/media/pic11.JPG": "/static/media/pic11.78810828c57edb6e3c05.JPG",
+    "static/media/angel-compressed.jpg": "/static/media/angel-compressed.787ca89bf97b835c3a7d.jpg",
     "static/media/Zurich-Bold-Condensed-BT.ttf": "/static/media/Zurich-Bold-Condensed-BT.d339847b768c901d95f6.ttf",
-    "static/media/INDEX.jpg": "/static/media/INDEX.a39c7278de15c66df1b7.jpg",
     "static/media/FAQ.jpg": "/static/media/FAQ.84dddebc3a08cfffaa8e.jpg",
     "static/media/SERVICES.jpg": "/static/media/SERVICES.cb40965ad871aa6f6b31.jpg",
     "static/media/TERRAIN-logo-scaleable 1.svg": "/static/media/TERRAIN-logo-scaleable 1.42147661bb66f5c3712acfb0a03ffd61.svg",
     "index.html": "/index.html",
-    "main.4f6764fb.css.map": "/static/css/main.4f6764fb.css.map",
-    "main.be6c5d09.js.map": "/static/js/main.be6c5d09.js.map",
+    "main.bee7cbdc.css.map": "/static/css/main.bee7cbdc.css.map",
+    "main.e57eefae.js.map": "/static/js/main.e57eefae.js.map",
     "787.63326563.chunk.js.map": "/static/js/787.63326563.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f6764fb.css",
-    "static/js/main.be6c5d09.js"
+    "static/css/main.bee7cbdc.css",
+    "static/js/main.e57eefae.js"
   ]
 }

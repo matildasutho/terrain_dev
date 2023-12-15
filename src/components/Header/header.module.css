@@ -94,6 +94,7 @@
   border-radius: 15px;
   padding: 3px 6px;
   margin: 3px 10px;
+  opacity: 0.8;
 }
 .linktext:hover {
   background-color: #82f74f;
@@ -116,10 +117,13 @@
   font-family: "GT America";
   font-weight: 200;
   line-height: 10px;
-  padding: 25px 15px;
+  height: 40px;
+  width: 40px;
+  padding: 15px;
   color: black;
   position: relative;
   z-index: 25;
+  background-image: radial-gradient(#f6f6f6, 60%, rgba(0, 0, 0, 0));
 }
 
 .mobile-nav {

@@ -10,7 +10,7 @@
 .homepage {
   gap: 10px;
   width: 100vw;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 310px);
   display: flex;
   flex-direction: column; /* Change to a vertical flex layout */
   align-items: flex-start;
@@ -41,6 +41,7 @@
   font-size: 42px;
   line-height: 64px;
   mix-blend-mode: multiply;
+  flex-shrink: 0;
 }
 .home-a {
   font-family: "GT America";
@@ -134,7 +135,7 @@
     line-height: 32px;
   }
   .textcontent {
-    width: calc(100vw - 20px);
+    width: calc(100vw - 30px);
     margin: 10px;
   }
   .terrainlogo {
@@ -155,7 +156,7 @@
     opacity: 1;
   }
 }
-@media only screen and (min-width: 970) {
+@media only screen and (min-width: 1740px) {
   .para-text {
     font-size: 80px;
     line-height: 96px;

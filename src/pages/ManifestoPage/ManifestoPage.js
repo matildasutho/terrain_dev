@@ -6,9 +6,9 @@ import Image from "../../components/Image/Image";
 
 import image1 from "../../assets/pic10.jpg";
 import image2 from "../../assets/pic11.JPG";
-import image3 from "../../assets/angel-compressed.jpg";
+import image3 from "../../assets/books.png";
 import image4 from "../../assets/ice_pattern.png";
-import image5 from "../../assets/books.png";
+import image5 from "../../assets/pic2.jpg";
 
 const ManifestoPage = (props) => {
   const [scrollPosition, getScrollPositon] = useState(
@@ -28,13 +28,13 @@ const ManifestoPage = (props) => {
     console.log(scrollPosition);
     if (scrollPosition < 200) {
       setCurrentImage(image1);
-    } else if (scrollPosition >= 200 && scrollPosition < 400) {
+    } else if (scrollPosition >= 200 && scrollPosition < 500) {
       setCurrentImage(image2);
-    } else if (scrollPosition >= 400 && scrollPosition < 800) {
+    } else if (scrollPosition >= 500 && scrollPosition < 800) {
       setCurrentImage(image3);
-    } else if (scrollPosition >= 800 && scrollPosition < 1400) {
+    } else if (scrollPosition >= 800 && scrollPosition < 1100) {
       setCurrentImage(image4);
-    } else if (scrollPosition >= 1400 && scrollPosition < 1900) {
+    } else if (scrollPosition >= 1100 && scrollPosition < 1400) {
       setCurrentImage(image5);
     }
   }, [scrollPosition]);

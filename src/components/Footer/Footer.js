@@ -15,6 +15,15 @@ const Footer = () => (
       <span className="footer-txt">
         <p>This is a renewably-powered self-hosted website.</p>
       </span>
+      <span className="footer-txt">
+        <p>
+          Built by{" "}
+          <a href="https://girlonroad.tech/" target="_blank">
+            Girl On Road
+          </a>
+          .
+        </p>
+      </span>
     </div>
   </div>
 );

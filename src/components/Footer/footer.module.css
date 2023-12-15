@@ -2,33 +2,35 @@
   --footer-font: 10px;
 }
 .footer {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 100vw;
   text-align: right;
   margin-top: auto;
-  padding-top: 50px;
-  height: 90px;
+  padding: 10px;
+  height: fit-content;
 }
 .footer-r {
   font-family: "Zurich";
   text-align: right;
   font-size: 80px;
-  padding: 5px;
+  line-height: 75px;
 }
 .footer-section {
   display: flex;
   flex-direction: column;
+  /* background-color: red; */
 }
 .footer p {
-  font-size: 8px;
+  font-size: 10px;
   line-height: 12px;
   font-family: "GT America";
   font-weight: 200;
   text-align: right;
 }
 .footer a {
-  font-size: 8px;
+  font-size: 10px;
   line-height: 12px;
   font-family: "GT America";
   font-weight: 200;
@@ -37,6 +39,10 @@
 @media only screen and (max-width: 970px) {
   .footer {
     height: 45px;
+    padding: 5px;
+  }
+  .footer-section {
+    padding-bottom: 10px;
   }
   .footer-r {
     font-size: 45px;

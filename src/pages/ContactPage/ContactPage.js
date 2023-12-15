@@ -9,25 +9,23 @@ const ContactPage = () => {
     <div className={styles["outer"]}>
       <div className={styles["contactPage"]}>
         <div className={styles["container"]}>
-          <div className={styles["textbox"]}>
-            General enquiries: hello@terrain.earth
-            <br></br>
-            Book related enquiries: books@terrain.earth
-            <br></br>
-            <br></br>
-            Subscribe to our mailing list if you would prefer to hear from us
-            and what’s happening.
-            <br></br>
-            <br></br>
-            <a href="/privacypolicy">Privacy Policy</a> and{" "}
-            <a href="/termsconditions">Terms and Conditions</a>.<br></br>
-            <br></br>
-            This is a renewably-powered self-hosted website.
-            <br></br>
-            <br></br>
-            <div className={styles["subscribe"]}>
-              {" "}
-              <div class="klaviyo-form-WdFuEM"></div>
+          <div className={styles["column"]}>
+            <div className={styles["textbox"]}>
+              General enquiries: hello@TERRAIN.earth
+              <br></br>
+              Book related enquiries: books@TERRAIN.earth
+              <br></br>
+              <br></br>
+              Subscribe to our mailing list if you would prefer to hear from us
+              and what’s happening.
+              <br></br>
+              <br></br>
+              <a href="/privacypolicy">Privacy Policy</a> and{" "}
+              <a href="/termsconditions">Terms and Conditions</a>.<br></br>
+              <br></br>
+              This is a renewably-powered self-hosted website.
+              <br></br>
+              <br></br>
             </div>
           </div>
 
@@ -69,12 +67,12 @@ const ContactPage = () => {
                     href="https://www.instagram.com/terrain.earth/"
                     target="_blank"
                   >
-                    Instagram
+                    INSTAGRAM
                   </a>
                 </div>
                 <div>
                   <a href="https://www.are.na/terrain" target="_blank">
-                    Are.na
+                    ARE.NA
                   </a>
                 </div>
                 <div>
@@ -82,13 +80,17 @@ const ContactPage = () => {
                     href="https://open.spotify.com/user/1232587233?si=00d0fc16457843a0"
                     target="_blank"
                   >
-                    Spotify
+                    SPOTIFY
                   </a>
                 </div>
               </span>
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles["subscribe"]}>
+        {" "}
+        <div class="klaviyo-form-WdFuEM"></div>
       </div>
     </div>
   );

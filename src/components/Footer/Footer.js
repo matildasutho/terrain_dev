@@ -4,6 +4,7 @@ import styles from "./footer.module.css";
 
 const Footer = () => (
   <div className={styles["footer"]}>
+    <div className={styles["footer-l"]}></div>
     <div className={styles["footer-section"]}>
       <span className={styles["footer-r"]}>©2023</span>
       <span>
